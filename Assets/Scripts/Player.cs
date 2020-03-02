@@ -5,15 +5,19 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
+    //config
     [SerializeField] float moveSpeed = 10f;
+    [SerializeField] float projectalSpeed = 10f;
     [Range(0.05f, 1f)] [SerializeField] float verticalMoveRange = 0.5f;
 
+    //states
     float xMin;
     float xMax;
     float yMin;
     float yMax;
 
+    //referece
+    [SerializeField] GameObject playerLaserPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -26,16 +30,17 @@ public class Player : MonoBehaviour
     void Update()
     {
         Move();
+        Fire();
     }
 
-
-    private void SetUpMoveBoundries()
+    private void Fire()
     {
-        Camera gameCamera = Camera.main;
-        xMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).x + GetComponent<SpriteRenderer>().size.x / 2; // +- width od player
-        xMax = gameCamera.ViewportToWorldPoint(new Vector3(1f, 0, 0)).x - GetComponent<SpriteRenderer>().size.x / 2;
-        yMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + GetComponent<SpriteRenderer>().size.y / 2;
-        yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, verticalMoveRange, 0)).y - GetComponent<SpriteRenderer>().size.y / 2;
+        if (Input.GetButtonDown("Fire1"))
+        {
+            GameObject laser = 
+                Instantiate(playerLaserPrefab, transform.position, Quaternion.identity) as GameObject;
+            laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, projectalSpeed);
+        }
     }
 
     private void Move()
@@ -47,6 +52,14 @@ public class Player : MonoBehaviour
         var newYPos = Mathf.Clamp(transform.position.y + deltaY, yMin, yMax);
 
         transform.position = new Vector2(newXPos, newYPos);
+    }
+    private void SetUpMoveBoundries()
+    {
+        Camera gameCamera = Camera.main;
+        xMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).x + GetComponent<SpriteRenderer>().size.x / 2; // +- width od player
+        xMax = gameCamera.ViewportToWorldPoint(new Vector3(1f, 0, 0)).x - GetComponent<SpriteRenderer>().size.x / 2;
+        yMin = gameCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).y + GetComponent<SpriteRenderer>().size.y / 2;
+        yMax = gameCamera.ViewportToWorldPoint(new Vector3(0, verticalMoveRange, 0)).y - GetComponent<SpriteRenderer>().size.y / 2;
     }
 
 

@@ -96,6 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   projectalSpeed: 20
+  projectileFiringPeriod: 0.1
   verticalMoveRange: 0.5
   playerLaserPrefab: {fileID: 3260765240275110275, guid: 22541dad5bade2241a73010fd70b3602,
     type: 3}

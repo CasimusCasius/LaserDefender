@@ -8,10 +8,11 @@ public class Enemy : MonoBehaviour
     [SerializeField] float minTimeBetweenShots = 1f;
     [SerializeField] float maxTimeBetweenShots = 3f;
     [SerializeField] float projectalSpeed = 10f;
-
+    [SerializeField] float durationOfExplosion = 1f;
 
 
     [SerializeField] GameObject enemyLaser;
+    [SerializeField] GameObject deathVFX;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,7 +56,14 @@ public class Enemy : MonoBehaviour
         damageDealer.Hit();
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    private void Die()
+    {
+        GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity) as GameObject;
+        Destroy(vfx, durationOfExplosion);
+        Destroy(gameObject);
     }
 }

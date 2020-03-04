@@ -97,6 +97,8 @@ MonoBehaviour:
   moveSpeed: 10
   verticalMoveRange: 0.5
   health: 200
+  deathVFX: {fileID: 3747847947844488862, guid: 54be00576ec38214bb43891cc8ff0699,
+    type: 3}
   playerLaserPrefab: {fileID: 3260765240275110275, guid: 22541dad5bade2241a73010fd70b3602,
     type: 3}
   projectalSpeed: 20

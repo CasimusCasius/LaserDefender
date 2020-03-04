@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     [SerializeField] float moveSpeed = 10f;
     [Range(0.05f, 1f)] [SerializeField] float verticalMoveRange = 0.5f;
     [SerializeField] int health = 200;
+    [SerializeField] GameObject deathVFX;
+    [SerializeField] float durationOfExplosion = 1f;
 
     [Header("Projectile")]
     [SerializeField] GameObject playerLaserPrefab;
@@ -89,8 +91,15 @@ public class Player : MonoBehaviour
         damageDealer.Hit();
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    private void Die()
+    {
+        GameObject vfx = Instantiate(deathVFX, transform.position, Quaternion.identity) as GameObject;
+        Destroy(vfx, durationOfExplosion);
+        Destroy(gameObject);
     }
 
     private void SetUpMoveBoundries()

@@ -131,3 +131,5 @@ MonoBehaviour:
   projectalSpeed: 10
   enemyLaser: {fileID: 6006615479168940034, guid: 7c7b168f1ef84ea48a9202374d9cb9a7,
     type: 3}
+  deathVFX: {fileID: 3747847947844488862, guid: 54be00576ec38214bb43891cc8ff0699,
+    type: 3}

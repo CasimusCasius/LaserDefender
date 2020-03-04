@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94a91c41d5f328c44920d9ff8159c801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundScrollSpeed: 0.1
+  backgroundScrollSpeed: 0.05
 --- !u!1 &1144866332 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2721903507319474215, guid: 1927e71f17fd5504cba17a65202ec581,
@@ -623,6 +623,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1938cdc7d887da044a105393e75b054e, type: 3}
+--- !u!1001 &3273434127362913124
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3273434125976093088, guid: 004e48e1f3f114a4fa53a47d09e989dc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273434125976093088, guid: 004e48e1f3f114a4fa53a47d09e989dc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -15.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273434125976093088, guid: 004e48e1f3f114a4fa53a47d09e989dc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273434125976093088, guid: 004e48e1f3f114a4fa53a47d09e989dc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273434125976093088, guid: 004e48e1f3f114a4fa53a47d09e989dc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273434125976093088, guid: 004e48e1f3f114a4fa53a47d09e989dc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273434125976093088, guid: 004e48e1f3f114a4fa53a47d09e989dc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273434125976093088, guid: 004e48e1f3f114a4fa53a47d09e989dc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273434125976093088, guid: 004e48e1f3f114a4fa53a47d09e989dc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273434125976093088, guid: 004e48e1f3f114a4fa53a47d09e989dc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273434125976093088, guid: 004e48e1f3f114a4fa53a47d09e989dc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3273434125976093093, guid: 004e48e1f3f114a4fa53a47d09e989dc,
+        type: 3}
+      propertyPath: m_Name
+      value: Starfield Close
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 004e48e1f3f114a4fa53a47d09e989dc, type: 3}
 --- !u!1001 &4406756269573043197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -692,6 +761,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ea4a16e75bb7204fa1ea052fbfa8ad1, type: 3}
+--- !u!1001 &4886080992110938844
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4886080991169843032, guid: fa5a48c7a15135f47a49b13d35eb3f06,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886080991169843032, guid: fa5a48c7a15135f47a49b13d35eb3f06,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 16.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886080991169843032, guid: fa5a48c7a15135f47a49b13d35eb3f06,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886080991169843032, guid: fa5a48c7a15135f47a49b13d35eb3f06,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886080991169843032, guid: fa5a48c7a15135f47a49b13d35eb3f06,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886080991169843032, guid: fa5a48c7a15135f47a49b13d35eb3f06,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886080991169843032, guid: fa5a48c7a15135f47a49b13d35eb3f06,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886080991169843032, guid: fa5a48c7a15135f47a49b13d35eb3f06,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886080991169843032, guid: fa5a48c7a15135f47a49b13d35eb3f06,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886080991169843032, guid: fa5a48c7a15135f47a49b13d35eb3f06,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886080991169843032, guid: fa5a48c7a15135f47a49b13d35eb3f06,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4886080991169843037, guid: fa5a48c7a15135f47a49b13d35eb3f06,
+        type: 3}
+      propertyPath: m_Name
+      value: Starfield Far
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fa5a48c7a15135f47a49b13d35eb3f06, type: 3}
 --- !u!1001 &6404438418767162860
 PrefabInstance:
   m_ObjectHideFlags: 0

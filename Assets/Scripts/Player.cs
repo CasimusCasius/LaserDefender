@@ -6,10 +6,16 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     //config
+    [Header("Player")]
     [SerializeField] float moveSpeed = 10f;
+    [Range(0.05f, 1f)] [SerializeField] float verticalMoveRange = 0.5f;
+    [SerializeField] int health = 200;
+
+    [Header("Projectile")]
+    [SerializeField] GameObject playerLaserPrefab;
     [SerializeField] float projectalSpeed = 10f;
     [SerializeField] float projectileFiringPeriod = 0.5f;
-    [Range(0.05f, 1f)] [SerializeField] float verticalMoveRange = 0.5f;
+    
 
 
     //states
@@ -19,8 +25,10 @@ public class Player : MonoBehaviour
     float yMax;
     Coroutine fireCoroutine;
 
+    
+
     //referece
-    [SerializeField] GameObject playerLaserPrefab;
+
 
     // Start is called before the first frame update
     void Start()
@@ -68,7 +76,21 @@ public class Player : MonoBehaviour
 
         transform.position = new Vector2(newXPos, newYPos);
     }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        var demageDealer = other.GetComponent<DamageDealer>();
+        
+        ProcessHit(demageDealer);
+    }
 
+    private void ProcessHit(DamageDealer demageDealer)
+    {
+        health -= demageDealer.GetDamage();
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void SetUpMoveBoundries()
     {

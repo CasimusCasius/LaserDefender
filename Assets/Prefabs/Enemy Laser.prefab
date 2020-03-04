@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &30390659613127013
+--- !u!1 &6006615479168940034
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 30390659613127015}
-  - component: {fileID: 30390659613127012}
-  - component: {fileID: 8808731382218292607}
-  - component: {fileID: 3490770851143743238}
-  - component: {fileID: 7273824287745527383}
+  - component: {fileID: 7220021147669523587}
+  - component: {fileID: 916227626177055639}
+  - component: {fileID: -5632172266930311278}
+  - component: {fileID: 1142308268143339477}
+  - component: {fileID: 5257720494474828950}
   m_Layer: 0
-  m_Name: Enemy 1
+  m_Name: Enemy Laser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &30390659613127015
+--- !u!4 &7220021147669523587
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30390659613127013}
+  m_GameObject: {fileID: 6006615479168940034}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.13, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &30390659613127012
+--- !u!212 &916227626177055639
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30390659613127013}
+  m_GameObject: {fileID: 6006615479168940034}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -73,61 +73,64 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f7c2028ae8cc8ac4695a5166a136b769, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b97412e4b42a681488c0cde363216ff3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.82, y: 0.84}
+  m_Size: {x: 0.13, y: 0.37}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8808731382218292607
-MonoBehaviour:
+--- !u!50 &-5632172266930311278
+Rigidbody2D:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30390659613127013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74e2b81d18af70349ad563ddec2550a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!58 &3490770851143743238
-CircleCollider2D:
+  m_GameObject: {fileID: 6006615479168940034}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!70 &1142308268143339477
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30390659613127013}
+  m_GameObject: {fileID: 6006615479168940034}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.024011314}
-  serializedVersion: 2
-  m_Radius: 0.39598864
---- !u!114 &7273824287745527383
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.13, y: 0.37}
+  m_Direction: 0
+--- !u!114 &5257720494474828950
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 30390659613127013}
+  m_GameObject: {fileID: 6006615479168940034}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bd6bf1ef85057a4f8ebcd1e1e0e65fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 609f0ae1255e3ff4faea7f501eec43b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 500
-  shotCounter: 0
-  minTimeBetweenShots: 0.3
-  maxTimeBetweenShots: 3
-  projectalSpeed: 10
-  enemyLaser: {fileID: 6006615479168940034, guid: 7c7b168f1ef84ea48a9202374d9cb9a7,
-    type: 3}
+  damage: 100
